@@ -53,6 +53,9 @@ def includeDesktopSupport = true
 // Also defines JUnit 5.
 dependencies {
     annotationProcessor wpi.java.deps.wpilibAnnotations()
+
+    implementation project(":houndutil")
+    
     implementation wpi.java.deps.wpilib()
     implementation wpi.java.vendor.java()
 
